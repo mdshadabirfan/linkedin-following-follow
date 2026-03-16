@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #f4f2ee;
+  color: black;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+nav img {
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+nav p {
+  cursor: pointer;
+}
+main {
+  width: fit-content;
+  border: 1px solid #1a1a1a22;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+}
+main .profile-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+main .profile-row img {
+  width: 50px;
+  border-radius: 50%;
+}
+main .profile-row .profile-info {
+  border-bottom: 1px solid #1a1a1a22;
+  padding: 20px;
+  width: 90%;
+}
+main .profile-row h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+main .profile-row h2:hover {
+  text-decoration: underline;
+}
+main .profile-row p {
+  font-size: 0.9rem;
+}
+main .profile-row .following {
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 4px 15px;
+  font-size: 1rem;
+  margin-left: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.802);
+  color: #000000bf;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+main .profile-row .following:hover {
+  border: 2px solid black;
+  background-color: #1a1a1a10;
+}
+.follow {
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 4px 15px;
+  font-size: 1rem;
+  margin-left: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  color: rgb(10, 102, 194);
+  border: 2px solid rgb(10, 102, 194);
+}
+.follow:hover {
+  background-color: rgba(10, 102, 194, 0.09);
+  color: rgb(10, 60, 111);
+  border: 2px solid rgb(10, 60, 111);
+}
