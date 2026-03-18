@@ -1,15 +1,16 @@
-const allProfile = document.querySelectorAll(".profile-row");
-allProfile.forEach((profile)=>{
-   const btn = profile.childNodes[5];
-   btn.addEventListener("click", ()=>{
-    if(btn.textContent === "Following"){
-        btn.classList.remove("following");
-        btn.classList.add("follow");
-        btn.textContent = "Follow";
-    }else{
-        btn.classList.remove("follow");
-        btn.classList.add("following");
-        btn.textContent = "Following";
-    }
-   })
+const allProfiles = document.querySelectorAll(".profile-row");
+allProfiles.forEach((profile, idx)=>{
+    const followBtn = profile.querySelector(".following");
+    followBtn.addEventListener("click", ()=>{
+        if(followBtn.textContent === "Following"){
+            followBtn.textContent = "Follow";
+            followBtn.classList.remove("following");
+            followBtn.classList.add("follow");
+        }else{
+            followBtn.textContent = "Following";
+            followBtn.classList.remove("follow");
+            followBtn.classList.add("following");
+        }
+    })
+    
 })
