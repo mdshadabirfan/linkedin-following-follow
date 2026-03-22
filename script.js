@@ -1,16 +1,15 @@
 const allProfiles = document.querySelectorAll(".profile-row");
-allProfiles.forEach((profile, idx)=>{
-    const followBtn = profile.querySelector(".following");
-    followBtn.addEventListener("click", ()=>{
-        if(followBtn.textContent === "Following"){
-            followBtn.textContent = "Follow";
-            followBtn.classList.remove("following");
-            followBtn.classList.add("follow");
+allProfiles.forEach((profile)=>{
+    let btn = profile.querySelector("button");
+    btn.addEventListener("click", (e)=>{
+        if(btn.textContent === "Following"){
+            btn.textContent = "Follow";
+            btn.classList.remove("following");
+            btn.classList.add("follow");
         }else{
-            followBtn.textContent = "Following";
-            followBtn.classList.remove("follow");
-            followBtn.classList.add("following");
+            btn.textContent = "Following";
+            btn.classList.remove("follow");
+            btn.classList.add("following");
         }
     })
-    
 })
